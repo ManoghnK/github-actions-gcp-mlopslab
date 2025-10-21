@@ -1,9 +1,28 @@
-# GitHub Actions and GCP Connections: Beginner Lab
+## 🍷 MLOps Lab – Wine Quality Prediction (Modified Assignment):
 
-## Overview
-Welcome to the "GitHub Actions and GCP Connections" beginner lab! In this lab, you will learn how to automate a machine learning workflow using GitHub Actions and Google Cloud Platform (GCP). By the end of the lab, you will understand how to connect GitHub Actions to GCP, allowing you to automate the process of training a machine learning model and uploading the results to Google Cloud Storage (GCS).
+This project is a **modified version** of the given MLOps lab template.(https://github.com/raminmohammadi/MLOps/tree/main/Labs/Github_Labs/Lab3)
+While the original example used the **Iris dataset**, this version demonstrates the same **end-to-end MLOps pipeline** using the **Wine Quality dataset** from `sklearn.datasets`.
 
-The provided project includes a simple machine learning model (RandomForestClassifier) trained on the Iris dataset. Your focus will be on setting up the cloud environment and automating the workflow using GitHub Actions.
+The pipeline includes:
+1. Data download and preprocessing  
+2. Model training using RandomForest  
+3. Model evaluation  
+4. Model saving and upload to **Google Cloud Storage (GCS)**
+
+---
+
+## 🧠 Overview
+
+- **Dataset Used:** Wine Quality Dataset (`load_wine()` from `sklearn.datasets`)
+- **Model Used:** RandomForestClassifier (Scikit-learn)
+- **Cloud Storage:** Google Cloud Storage (for model artifact)
+- **Programming Language:** Python 3.13
+- **Libraries:** `pandas`, `scikit-learn`, `google-cloud-storage`, `joblib`
+
+This implementation maintains the same logic flow as the original lab but introduces a **different dataset**, ensuring unique experimentation while preserving reproducibility.
+
+---
+
 
 ## Learning Objectives
 By completing this lab, you will:
